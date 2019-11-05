@@ -16,10 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb8-Hp-HDI">
-                                <rect key="frame" x="155.5" y="416.5" width="103" height="73"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb8-Hp-HDI">
+                                <rect key="frame" x="155.5" y="425.5" width="103" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="lL4-No-TmY"/>
+                                    <constraint firstAttribute="height" constant="55" id="RBV-rT-0wi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <nil key="textColor"/>
@@ -36,13 +36,24 @@
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMK-iG-MGF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afx-Kw-cK1">
+                                <rect key="frame" x="368" y="44" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="ClearClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90a-6r-uLj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="R8d-fN-mrd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="84B-eQ-WdT"/>
                             <constraint firstItem="cb8-Hp-HDI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9FU-sd-Hxb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cb8-Hp-HDI" secondAttribute="trailing" constant="10" id="DNK-yG-M7R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R8d-fN-mrd" secondAttribute="bottom" constant="50" id="JDa-a9-Fog"/>
+                            <constraint firstItem="afx-Kw-cK1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WVv-ae-YQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="afx-Kw-cK1" secondAttribute="trailing" constant="10" id="fcC-gH-qD1"/>
                             <constraint firstItem="cb8-Hp-HDI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fjk-Em-NOi"/>
+                            <constraint firstItem="cb8-Hp-HDI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ofp-XA-NIa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
